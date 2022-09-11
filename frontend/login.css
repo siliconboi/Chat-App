@@ -1,0 +1,18 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 2rem;
+    padding: 1rem;
+}
+#self{
+ color: green;
+ text-align: right;
+}
+#others{
+    color: red;
+    text-align: left;
+}
+div{
+    margin-left: 18%;
+    margin-right: 18%;
+}
