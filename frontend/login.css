@@ -1,18 +1,90 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    margin: 2rem;
-    padding: 1rem;
+/* login.css */
+
+/* Color palette */
+:root {
+    --primary-color: #FDCB58;
+    --secondary-color: #FFFFFF;
 }
-#self{
- color: green;
- text-align: right;
+
+/* Mobile-first styles */
+#formarea {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(to right, var(--primary-color), #FFDF82);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
 }
-#others{
-    color: red;
-    text-align: left;
+
+form {
+    margin-bottom: 20px;
 }
-div{
-    margin-left: 18%;
-    margin-right: 18%;
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: var(--secondary-color);
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #FFF8EB;
+    color: #555;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #FBB040;
+}
+
+/* Media queries for responsive design */
+@media (min-width: 576px) {
+    /* Styles for screens larger than 576px (e.g., tablets) */
+    #formarea {
+        max-width: 400px;
+    }
+}
+
+@media (min-width: 768px) {
+    /* Styles for screens larger than 768px (e.g., small laptops) */
+    #formarea {
+        max-width: 500px;
+    }
+}
+
+@media (min-width: 992px) {
+    /* Styles for screens larger than 992px (e.g., laptops and desktops) */
+    #formarea {
+        max-width: 600px;
+    }
+}
+
+@media (min-width: 1200px) {
+    /* Styles for screens larger than 1200px (e.g., large desktops) */
+    #formarea {
+        max-width: 800px;
+    }
 }
