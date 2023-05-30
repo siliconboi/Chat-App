@@ -9,7 +9,7 @@ else{
     const msg = document.getElementById("msgbox");
     const msgarea = document.getElementById("msgarea");
     
-const socket = io("http://localhost:3000",{
+const socket = io("https://vanilla-chat-app.onrender.com",{
     query:{
        token: token //sending token socket as part of handshake query
     }
