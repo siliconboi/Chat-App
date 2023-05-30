@@ -6,7 +6,10 @@
     --secondary-color: #FFFFFF;
 }
 
-/* Mobile-first styles */
+body {
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+}
+
 #formarea {
     max-width: 300px;
     margin: 0 auto;
