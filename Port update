@@ -43,6 +43,6 @@ socket.emit("allChat", msgs);
 });
 
 mongoose.connect(process.env.DB_CONNECT);
-httpServer.listen(3000, ()=>{
+httpServer.listen(3000||process.env.PORT, ()=>{
         console.log(`listening on http://localhost:3000`)
 });
